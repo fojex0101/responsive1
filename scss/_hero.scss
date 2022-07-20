@@ -1,0 +1,129 @@
+.hero{
+    margin-left: 85px;
+    margin-right: 85px;
+ 
+    
+    &__list{
+        position: relative;
+        top: -200px;
+        max-width: 350px;
+        height: 382px;
+        padding: 17px 20px;
+        text-align: center;
+        background-color: #0E8784;
+        border-radius: 8px;
+        margin-left: 24px;
+        
+        
+        
+    }
+    &__text{
+        padding-top: 24px;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: #ffff;
+        font-family: 'Fraunces';
+    }
+    
+    &__lorem{
+        margin-top: 24px;
+        font-size: 16px;
+        line-height: 26px; 
+        color: #FEFCF7;
+    }
+
+    &__box{
+        display: flex;
+        
+    }
+}
+
+
+@media only screen and (max-width:768px){
+    .hero__box{
+        flex-direction: column;
+
+       
+    }
+    
+    .hero__list{
+        display: flex;  
+        flex-direction: row;
+        max-width: 573px;
+        height: 180px;
+        margin-bottom: 24px
+        ;
+        text-align: left;
+    }
+
+    .hero__img{
+    width: 56px;
+    height: 56px;
+    }
+
+    .ccc{
+        margin-left: 100px;
+       max-width: 344px;
+       height: 98px;
+       margin-top: -41px;
+       margin-bottom: 41px;
+    }
+
+    .hero__lorem{
+       
+    }
+
+    .hero__img{
+        width: 56px;
+        height: 56px;
+        margin-top: 32px;
+        margin-left: 70px;
+        margin-bottom: 32px;
+    }
+}
+
+
+@media only screen and (max-width:375px){
+  .hero__list{
+    max-width: 279px;
+    height: 382px;
+   flex-direction: row;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   margin-top: 0;
+   margin-left: 0;
+   margin-right: 0;
+   justify-content: center;
+   margin-bottom: 24px;
+   display: block;
+  }
+
+  .hero__lorem{
+    max-width: 212px;
+    height: 75px;
+    margin-top: 54px;
+  }
+
+  .ccc{
+    text-align: center;
+    max-width: 255px;
+    margin-left: 12px;
+    margin-right: 12px;
+    height: 131px;
+  }
+
+  .hero__text{
+    max-width: 255px;
+    height: 32px;
+  }
+
+  .hero__img{
+    margin-right: 60px;
+  }
+
+  .hero__box{
+    margin-top: -330px;
+  }
+}

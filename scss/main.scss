@@ -1,0 +1,31 @@
+@use "./list";
+@use "./box";
+@use  "./hero";
+
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100vh;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    max-width: 1320px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+
+@media only screen and (max-width:375px){
+    .container{
+        padding: 0;
+    }
+}
