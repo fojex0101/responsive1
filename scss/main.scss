@@ -1,6 +1,8 @@
 @use "./list";
 @use "./box";
 @use  "./hero";
+@use "./header";
+@use "./anonym";
 
 
 *,*::before,*::after{
@@ -15,6 +17,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+ 
 }
 
 .container{
@@ -29,3 +32,4 @@ body{
         padding: 0;
     }
 }
+

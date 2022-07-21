@@ -1,4 +1,6 @@
 .list {
+  padding: 0;
+  padding-top: 131px;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -55,11 +57,13 @@
   background-color: #2C343E;
 }
 .box__list {
+  display: block;
   max-width: 540px;
-  height: 160px;
+  max-height: 160px;
   margin: 0 auto;
   text-align: center;
   padding-top: 100px;
+  padding-left: -1200px;
 }
 .box__tittle {
   font-weight: 900;
@@ -80,7 +84,7 @@
 @media only screen and (max-width: 768px) {
   .box {
     max-width: 668px;
-    height: 573px;
+    min-height: 573px;
     margin-left: 40px;
     margin-right: 40px;
   }
@@ -101,7 +105,7 @@
   position: relative;
   top: -200px;
   max-width: 350px;
-  height: 382px;
+  max-height: 382px;
   padding: 17px 20px;
   text-align: center;
   background-color: #0E8784;
@@ -129,6 +133,7 @@
 @media only screen and (max-width: 768px) {
   .hero__box {
     flex-direction: column;
+    padding-top: 70px;
   }
   .hero__list {
     display: flex;
@@ -193,6 +198,186 @@
   }
   .hero__box {
     margin-top: -330px;
+  }
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.header__item {
+  margin-left: 33px;
+  margin-top: 50px;
+}
+
+.header__img {
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.header__link {
+  max-width: 121px;
+  height: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #83888F;
+  text-transform: uppercase;
+}
+
+.header__link:hover {
+  color: #333D4B;
+}
+
+.hhh {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .header__img {
+    max-width: 236px;
+    max-height: 26px;
+  }
+  .header__link {
+    max-width: 34px;
+    max-height: 15px;
+  }
+  .header__list {
+    margin-right: 30px;
+  }
+  .header__container {
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .header__list {
+    display: none;
+  }
+  .header__img {
+    width: 163px;
+    height: 18px;
+    margin-left: 24px;
+  }
+  .hhh {
+    display: block;
+    margin-top: 40px;
+    border: none;
+    margin-right: 24px;
+  }
+}
+.anonym__box {
+  max-width: 1280px;
+  height: 600px;
+  background-image: url(./../img/bf1.svg);
+  background-size: 1280px 600px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.anonym__tittle {
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #FEFCF7;
+  padding: 117px 85px;
+}
+
+.anonym__lorem {
+  max-width: 445px;
+  min-height: 78px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FEFCF7;
+  margin-left: 80px;
+  margin-top: -122px;
+}
+
+.anonym__button {
+  margin-left: 80px;
+  background-color: #66D2CF;
+  border: none;
+  padding: 15px 31px;
+  border-radius: 6px;
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FEFCF7;
+  text-transform: capitalize;
+  margin-top: 71px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .anonym__box {
+    max-width: 689px;
+    min-height: 500px;
+    background-image: url(./../img/responsive.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 689px 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    overflow: hidden;
+  }
+  .anonym__tittle {
+    margin-left: -10px;
+    min-width: 329px;
+    max-height: 97px;
+  }
+  .anonym__lorem {
+    margin-top: 24px;
+  }
+  .anonym__button {
+    margin-top: 24px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .anonym__box {
+    background-image: url(./../img/mobile.svg);
+    background-size: 327px 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .anonym__tittle {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 100px;
+    margin-left: 24px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    padding: 0 24px;
+  }
+  .anonym__lorem {
+    max-width: 279px;
+    max-height: 101px;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 235px;
+    text-align: center;
+    padding-right: 0px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .anonym__button {
+    margin-top: 39px;
   }
 }
 *, *::before, *::after {

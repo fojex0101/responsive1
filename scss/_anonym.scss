@@ -1,0 +1,127 @@
+.anonym__box{
+    max-width: 1280px;
+    height: 600px;
+    background-image: url(./../img/bf1.svg);
+    background-size: 1280px 600px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    
+}
+
+.anonym__tittle{
+    
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    color: #FEFCF7;
+    padding: 117px 85px;
+    
+}
+
+.anonym__lorem{
+    
+    max-width: 445px;
+    min-height: 78px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+    margin-left: 80px;
+    margin-top: -122px;
+}
+
+.anonym__button{
+    margin-left: 80px;
+    background-color: #66D2CF;
+    border: none;
+    padding: 15px 31px;
+    border-radius: 6px;
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FEFCF7;
+    text-transform: capitalize;
+    margin-top: 71px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:768px){
+    .anonym__box{
+        
+        max-width: 689px;
+        min-height: 500px;
+        background-image: url(./../img/responsive.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 689px 500px;
+        object-fit: cover;
+        object-position: center;
+        overflow: hidden;
+    }
+    
+    .anonym__tittle{
+        margin-left: -10px;
+        min-width: 329px;
+        max-height: 97px;
+    }
+    
+    .anonym__lorem{
+        margin-top: 24px;
+        
+    }
+    
+    .anonym__button{
+        margin-top: 24px;
+    }
+}
+@media only screen and (max-width:375px){
+    .anonym__box{
+        background-image: url(./../img/mobile.svg);
+        background-size: 327px 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .anonym__tittle{
+        
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-top: 100px;
+        margin-left: 24px;
+        text-align: center;
+        font-size: 40px;
+        line-height: 40px;
+        padding: 0 24px;
+    }
+    
+    .anonym__lorem{
+        max-width: 279px;
+        max-height: 101px;
+        padding: 0;
+        margin: 0 auto;
+        
+        margin-top: 235px;
+        text-align: center;
+        padding-right: 0px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    
+    .anonym__button{
+        margin-top: 39px;
+    }
+    
+   
+}
+
+
+
+
+
+
+
+
+
